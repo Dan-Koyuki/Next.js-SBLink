@@ -8,7 +8,7 @@ export default function Home() {
     <main className="min-h-screen">
       <div className="fixed">
         <Image
-          className="bg-cover bg-center bg-no-repeat z-0"
+          className="z-0"
           src={
             "https://res.cloudinary.com/dankoyuki/image/upload/v1715683730/KohoLink/cyw1bsyklzlgoxztwddy.png"
           }

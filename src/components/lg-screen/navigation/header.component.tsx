@@ -133,9 +133,9 @@ const TopBar = () => {
             tokenSetter={tokenSetter}
           />
         ) : modalState === "GeneralMenu" ? (
-          <GeneralMenu modalSetting={isModalOpen} />
+          <GeneralMenu modalSetting={isModalOpen} closFunc={CloseModal} />
         ) : (
-          <ServiceMenu modalSetting={isModalOpen} />
+          <ServiceMenu modalSetting={isModalOpen} closFunc={CloseModal} />
         ))}
     </div>
   );

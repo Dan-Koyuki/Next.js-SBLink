@@ -30,4 +30,10 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+
+  .side-general-menu {
+    min-height: calc(
+      100vh - 58px
+    ); /* Subtract header height from viewport height */
+  }
 }
