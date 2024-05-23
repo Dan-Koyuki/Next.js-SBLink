@@ -1,12 +1,8 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import {
-  MdOutlineHolidayVillage,
-  MdOutlineAddAlert,
-  MdOutlineWorkspacePremium,
-} from "react-icons/md";
-import { ImProfile } from "react-icons/im";
-import { IoNewspaperOutline } from "react-icons/io5";
+import { MdEvent, MdOutlineVolunteerActivism } from "react-icons/md";
+import { CiMoneyCheck1 } from "react-icons/ci";
+import { FaWpforms } from "react-icons/fa6";
 
 type ActiveMenu = {
   activeMenu: (menu: String) => void;
@@ -39,54 +35,54 @@ const SideServiceMenu = ({ activeMenu }: ActiveMenu) => {
         <div className="flex flex-col gap-10 w-full pl-4">
           <p
             onClick={() => {
-              handleActive("VP");
+              handleActive("E");
             }}
             className={`cursor-pointer py-4 rounded-l-lg flex flex-row gap-2 items-center ${
-              isActivate === "VP"
+              isActivate === "E"
                 ? "border-lime-500 border-4 border-r-0 pl-4"
                 : "border-0"
             }`}
           >
-            <MdOutlineHolidayVillage size={40} />
+            <MdEvent size={40} />
             Events
           </p>
           <p
             onClick={() => {
-              handleActive("S");
+              handleActive("VO");
             }}
             className={`cursor-pointer py-4 rounded-l-lg flex flex-row gap-2 items-center ${
-              isActivate === "S"
+              isActivate === "VO"
                 ? "border-lime-500 border-4 border-r-0 pl-4"
                 : "border-0"
             }`}
           >
-            <ImProfile size={35} />
+            <MdOutlineVolunteerActivism size={40} />
             Volunteer Opportunities
           </p>
           <p
             onClick={() => {
-              handleActive("NA");
+              handleActive("OF");
             }}
             className={`cursor-pointer py-4 rounded-l-lg flex flex-row gap-2 items-center ${
-              isActivate === "NA"
+              isActivate === "OF"
                 ? "border-lime-500 border-4 border-r-0 pl-4"
                 : "border-0"
             }`}
           >
-            <IoNewspaperOutline size={40} />
+            <FaWpforms size={35} />
             Online Form
           </p>
           <p
             onClick={() => {
-              handleActive("EA");
+              handleActive("FT");
             }}
             className={`cursor-pointer py-4 rounded-l-lg flex flex-row gap-2 items-center ${
-              isActivate === "EA"
+              isActivate === "FT"
                 ? "border-lime-500 border-4 border-r-0 pl-4"
                 : "border-0"
             }`}
           >
-            <MdOutlineAddAlert size={40} />
+            <CiMoneyCheck1 size={40} />
             Financials Transparency
           </p>
         </div>

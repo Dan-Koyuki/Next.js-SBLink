@@ -2,7 +2,7 @@ import React from "react";
 import { MenuProps } from "./menu";
 import { useRouter } from "next/navigation";
 
-const OnlineForm = ({modalSetting} : MenuProps) => {
+const OnlineForm = ({modalSetting, closFunc} : MenuProps) => {
   const router = useRouter();
 
   const Report = () => {
